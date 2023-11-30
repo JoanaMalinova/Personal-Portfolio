@@ -175,12 +175,12 @@ header {
 .inner-wrapper{
     position: relative;
     border-radius: 20px;
-    border: 4px dotted #ffffd3;
-    background-color: rgb(136, 205, 228);
+    border: 4px dashed rgb(175, 122, 224);
+    /* background-color: #ffffd3; */
     height: 50vh;
  }
 
-.skills .icon-wrapper{
+.icon-wrapper{
     background-color: #ffffd3;
     transform: rotate(45deg);
     border-radius: 10px;
@@ -194,5 +194,20 @@ header {
     position: absolute;
     left: 5px;
     top: -80px;
+    border: 2px solid rgb(175, 122, 224);
+}
+
+.inner-wrapper span{
+    position: absolute;
+    border-radius: 50%;
+    top:0;
+    left: 16%;
+    transform: translateY(-50%);
+    font-size: 34px;
+    background-color: rgb(175, 122, 224);
+    padding: 25px 20px;
+    color: #ffffd3;
+    line-height: 1;
+    font-family: "Monoton", sans-serif;
 }
 
