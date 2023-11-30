@@ -10,14 +10,10 @@ body {
 
 /* ************************HEADER******************************* */
 
-header {
-    width: 100vw;
-}
 
 /* ****************Navigation************************ */
 
-.main-navigation {
-    width: 100vw;
+.main-navigation { 
     background-color: #ffffd3;
 }
 
@@ -67,22 +63,21 @@ header {
     transform: scale(0);
     opacity: 0;
     transition: 0.3s;
-    z-index: -1;   
+    z-index: -1;
 }
 
 .main-navigation .nav-list-item a:hover {
     color: #ffffd3;
-    
 }
 
 .main-navigation .nav-list-item a:hover::before {
     transform: scaleY(1);
-    opacity: 1;   
+    opacity: 1;
 }
 
 .main-navigation .nav-list-item a:hover::after {
     transform: scaleY(1);
-    opacity: 1;   
+    opacity: 1;
 }
 
 /* ****************Main Header********************** */
@@ -156,31 +151,27 @@ header {
     transform: skewX(-20deg);
 }
 
-
 /* ************************MAIN******************************* */
-
-
 
 /* ****************Skills********************** */
 
-.skills{
+.skills {
     padding: 120px 80px;
 }
 
-.skills img{
-    height:70px;   
+.skills img {
+    height: 70px;
     transform: rotate(-45deg);
 }
 
-.inner-wrapper{
+.inner-wrapper {
     position: relative;
     border-radius: 20px;
-    border: 4px dashed rgb(175, 122, 224);
-    /* background-color: #ffffd3; */
-    height: 50vh;
- }
+    border: 4px dashed rgb(175, 122, 224);   
+    height: 50vh;    
+}
 
-.icon-wrapper{
+.icon-wrapper {
     background-color: #ffffd3;
     transform: rotate(45deg);
     border-radius: 10px;
@@ -195,12 +186,13 @@ header {
     left: 5px;
     top: -80px;
     border: 2px solid rgb(175, 122, 224);
+
 }
 
-.inner-wrapper span{
+.inner-wrapper .section-heading {
     position: absolute;
     border-radius: 50%;
-    top:0;
+    top: 0;
     left: 16%;
     transform: translateY(-50%);
     font-size: 34px;
@@ -209,5 +201,33 @@ header {
     color: #ffffd3;
     line-height: 1;
     font-family: "Monoton", sans-serif;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    font-size: 26px;
+    color: rgb(175, 122, 224);
+    padding-top: 50px;      
+}
+
+.skill-list>li{
+    min-width: 20%;
+    text-align: center; 
+    font-weight: 500;
+    background-color: #ffffd3;
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.skill-list span{
+    display: inline-block;
+    transform: skewX(-20deg);
+    font-size: 22px;   
 }
 
