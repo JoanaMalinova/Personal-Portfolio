@@ -449,7 +449,7 @@ body {
     background-color: rgb(175, 122, 224);
     padding: 0 40px 10px;
     color: #ffffd3;
-    font-size: 18px;
+    /* font-size: 18px; */
     text-align: center;
     display: flex;
     align-items: center;
@@ -529,15 +529,40 @@ body {
 
 .education{
     color: rgb(175, 122, 224);
-    font-size: 19px;
 }
 
-.education .education-list span{
+.education .education-list i{
+    color: #ffffd3;
+}
+
+/* ****************Work experience********************** */
+
+.work .inner-wrapper {
+    border: none;
+    background-color: #ffffd3;
+    -webkit-box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.25);
+    box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.25);
+    color: rgb(175, 122, 224);
+}
+
+.work .work-list{  
+    display: flex; 
+    justify-content: space-around; 
+    gap: 30px;
+    width: 100%;
+    padding: 40px;
+}
+
+.education .education-list span,
+.work .work-list span{
     font-weight: 400;
     font-size: 19px;
     font-style: italic;
 }
 
-.education .education-list i{
-    color: #ffffd3;
+/* ****************Interests********************** */
+
+.interests .inner-wrapper{
+    border: none;
 }
