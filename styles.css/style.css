@@ -399,31 +399,66 @@ body {
     padding: 150px 0;
 }
 
+.projects .icon-wrapper {
+    left: 6%;
+}
+
+.projects .inner-wrapper .section-heading {
+    left: 20%;
+}
+
 .project-wrapper {
     height: 420px;
     display: flex;
-    /* background-color: rgb(175, 122, 224); */
+    margin-bottom: 25px;
+    -webkit-box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.25);
+    box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.25);
 }
 
 .project-wrapper .project-image {
     width: calc(40% + 50px);
     height: 100%;
     border-bottom: 420px solid transparent;
-    border-right: 100px solid rgb(175, 122, 224);
     position: relative;
+    background-color: #ffffd3;
+    transition: all 0.7s ease-in;
+}
+
+.project-wrapper.left .project-image {
+    border-right: 100px solid rgb(175, 122, 224);
+}
+
+.project-wrapper.right .project-image {
+    border-left: 100px solid rgb(175, 122, 224);
 }
 
 .project-wrapper .project-description {
     width: calc(60% - 50px);
     background-color: rgb(175, 122, 224);
+    padding: 0 40px 10px;
+    color: #ffffd3;
+    font-size: 18px;
+    text-align: center;
+}
+
+.project-wrapper .project-description ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .project-wrapper .project-description h2 {
     font-family: Megrim, sans-serif;
-    font-size: 60px;    
+    font-size: 60px;
     color: #ffffd3;
     text-align: center;
-    padding: 30px;
+    padding: 10px;
+    /* text-shadow: 6px 2px 7px rgba(0, 0, 0, 0.15); */
+}
+
+.project-wrapper .project-description p {
+    text-align: justify;
 }
 
 .project-image img {
@@ -431,4 +466,44 @@ body {
     position: absolute;
     top: 0;
     z-index: -1;
+    transition: all 0.7s ease-in;
+}
+
+.left .project-image img {
+    left: -150%;
+}
+
+.right .project-image img {
+    right: -150%;
+}
+
+.project-wrapper.left:hover {
+    .project-image {
+        background-color: transparent;
+    }
+
+    .project-image img {
+        left: 0;
+    }
+}
+
+.project-wrapper.right:hover {
+    .project-image {
+        background-color: transparent;
+    }
+
+    .project-image img {
+        right: 0;
+    }
+}
+
+.project-description a {
+    color: #c6fad6;
+    font-family: Megrim, sans-serif;
+    font-weight: 900;
+    transition: all 0.8 ease-out;
+}
+
+.project-description a:hover {
+    opacity: 0.8;
 }
