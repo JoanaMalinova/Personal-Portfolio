@@ -128,7 +128,7 @@ body {
     font-family: Megrim, sans-serif;
     font-size: 80px;
     font-weight: 200;
-    text-shadow: 6px 2px 7px rgba(0,0,0,0.15);
+    text-shadow: 6px 2px 7px rgba(0, 0, 0, 0.15);
 }
 
 .description .h2-wrapper {
@@ -163,24 +163,9 @@ body {
     padding: 120px 80px;
 }
 
-.main-section img {
+.icon-wrapper img {
     height: 70px;
     transform: rotate(-45deg);
-}
-
-/* ****************About me********************** */
-
-.main-section.about-me img {
-    height: 90px;
-}
-
-/* ****************Skills********************** */
-
-.inner-wrapper {
-    position: relative;
-    border-radius: 20px;
-    border: 4px dashed rgb(175, 122, 224);
-    padding: 75px;
 }
 
 .icon-wrapper {
@@ -220,6 +205,110 @@ body {
     box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.37);
 }
 
+/* ****************About me and contacts********************** */
+
+.main-section.about-me img {
+    height: 90px;
+}
+
+.about-me {
+    margin-top: 70px;
+}
+
+.about-me .inner-wrapper {
+    background-color: #ffffd3;
+    border: none;
+    color: rgb(175, 122, 224);
+}
+
+.about-me h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Megrim, sans-serif;
+    font-size: 35px;
+}
+
+.about-me .inner-wrapper {
+    -webkit-box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.25);
+    box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.25);
+}
+
+.about-me .main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me .left-section {
+    text-align: justify;
+    border-right: 1px solid rgb(175, 122, 224);
+    padding-right: 60px;
+    text-indent: 20px;
+    width: 70%;
+}
+
+.about-me .right-section {
+    padding-left: 60px;
+    width: 30%;
+}
+
+.about-me .right-section ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: flex-end; */
+    gap: 20px;
+    font-size: 17px;
+}
+
+.about-me .right-section ul li:nth-of-type(1),
+.about-me .right-section ul li:nth-of-type(2),
+.about-me .right-section ul li:nth-of-type(3) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-me .right-section a {
+    color: rgb(175, 122, 224);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+    transition: all 0.7s ease;
+}
+
+.about-me .right-section a:hover {
+    letter-spacing: 0.5px;
+}
+
+.about-me .right-section i {
+    font-size: 30px;
+}
+
+.icon-wrapper.right-icon {
+    left: 62%;
+}
+
+.icon-wrapper.right-icon img {
+    height: 60px;
+}
+
+.inner-wrapper .section-heading.right-heading {
+    left: 77%;
+}
+
+/* ****************Skills********************** */
+
+.inner-wrapper {
+    position: relative;
+    border-radius: 20px;
+    border: 4px dashed rgb(175, 122, 224);
+    padding: 75px;
+}
+
 .skill-list {
     display: flex;
     flex-wrap: wrap;
@@ -242,9 +331,9 @@ body {
     /* border: 1px solid #ffffd3; */
     position: relative;
     transition: color 0.7s ease-in;
-    -webkit-box-shadow: inset 3px -6px 16px -6px rgba(0,0,0,0.17);
-    -moz-box-shadow: inset 3px -6px 16px -6px rgba(0,0,0,0.17);
-    box-shadow: inset 3px -6px 16px -6px rgba(0,0,0,0.17);
+    -webkit-box-shadow: inset 3px -6px 16px -6px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: inset 3px -6px 16px -6px rgba(0, 0, 0, 0.17);
+    box-shadow: inset 3px -6px 16px -6px rgba(0, 0, 0, 0.17);
 }
 
 .skill-list > li::before {
@@ -258,9 +347,9 @@ body {
     transition: width 1s ease-in;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    -webkit-box-shadow: inset 3px -6px 16px -6px rgba(0,0,0,0.17);
-    -moz-box-shadow: inset 3px -6px 16px -6px rgba(0,0,0,0.17);
-    box-shadow: inset 3px -6px 16px -6px rgba(0,0,0,0.17);
+    -webkit-box-shadow: inset 3px -6px 16px -6px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: inset 3px -6px 16px -6px rgba(0, 0, 0, 0.17);
+    box-shadow: inset 3px -6px 16px -6px rgba(0, 0, 0, 0.17);
 }
 
 .skill-list span {
@@ -299,90 +388,47 @@ body {
     }
 }
 
-/* ****************About me********************** */
+/* ****************Projects********************** */
 
-.about-me .inner-wrapper {
-    background-color: #ffffd3;
+.projects {
+    padding: 100px 0;
+}
+
+.projects .inner-wrapper {
     border: none;
-    color: rgb(175, 122, 224);
+    padding: 150px 0;
 }
 
-.about-me h1{
-    text-align: center;
-    margin-bottom: 30px;
-    font-family: Megrim, sans-serif;
-    font-size: 35px;
-}
-
-.about-me .inner-wrapper{
-    -webkit-box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.25);
-    box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.25);
-}
-
-.about-me .main-content{
+.project-wrapper {
+    height: 420px;
     display: flex;
-    justify-content: space-between;
+    /* background-color: rgb(175, 122, 224); */
 }
 
-.about-me .left-section{
-    text-align: justify;
-    border-right: 1px solid rgb(175, 122, 224);
-    padding-right: 60px;
-    text-indent: 20px;
-    width: 70%;
-}
-
-.about-me .right-section{
-    padding-left: 60px;   
-    width: 30%;
-}
-
-.about-me .right-section ul{
+.project-wrapper .project-image {
+    width: calc(40% + 50px);
     height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    /* align-items: flex-end; */
-    gap: 20px;
-    font-size: 17px;
-  }
-
-  .about-me .right-section ul li:nth-of-type(1),
-  .about-me .right-section ul li:nth-of-type(2),
-  .about-me .right-section ul li:nth-of-type(3){
-    display: flex;
-    align-items: center;
-    gap: 20px;    
-  }
-
-
-.about-me .right-section a{
-    color: rgb(175, 122, 224);
-    display: flex;
-    align-items: center;
-    gap: 20px;  
-    font-weight: 500;
-    transition: all 0.7s ease; 
+    border-bottom: 420px solid transparent;
+    border-right: 100px solid rgb(175, 122, 224);
+    position: relative;
 }
 
-.about-me .right-section a:hover{
-    letter-spacing: 0.5px;
+.project-wrapper .project-description {
+    width: calc(60% - 50px);
+    background-color: rgb(175, 122, 224);
 }
 
-.about-me .right-section i{
-    font-size: 30px;   
+.project-wrapper .project-description h2 {
+    font-family: Megrim, sans-serif;
+    font-size: 60px;    
+    color: #ffffd3;
+    text-align: center;
+    padding: 30px;
 }
 
-.icon-wrapper.right-icon {   
-    left: 62%;
-}
-
-.icon-wrapper.right-icon img{
-    height: 60px;
-}
-
-.inner-wrapper .section-heading.right-heading{   
-    left: 77%;   
+.project-image img {
+    height: 420px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
