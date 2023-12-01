@@ -128,6 +128,7 @@ body {
     font-family: Megrim, sans-serif;
     font-size: 80px;
     font-weight: 200;
+    text-shadow: 6px 2px 7px rgba(0,0,0,0.15);
 }
 
 .description .h2-wrapper {
@@ -179,6 +180,7 @@ body {
     position: relative;
     border-radius: 20px;
     border: 4px dashed rgb(175, 122, 224);
+    padding: 75px;
 }
 
 .icon-wrapper {
@@ -226,7 +228,6 @@ body {
     width: 100%;
     font-size: 26px;
     color: rgb(175, 122, 224);
-    padding: 75px;
     justify-content: space-evenly;
 }
 
@@ -303,4 +304,85 @@ body {
 .about-me .inner-wrapper {
     background-color: #ffffd3;
     border: none;
+    color: rgb(175, 122, 224);
+}
+
+.about-me h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Megrim, sans-serif;
+    font-size: 35px;
+}
+
+.about-me .inner-wrapper{
+    -webkit-box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.25);
+    box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.25);
+}
+
+.about-me .main-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me .left-section{
+    text-align: justify;
+    border-right: 1px solid rgb(175, 122, 224);
+    padding-right: 60px;
+    text-indent: 20px;
+    width: 70%;
+}
+
+.about-me .right-section{
+    padding-left: 60px;   
+    width: 30%;
+}
+
+.about-me .right-section ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: flex-end; */
+    gap: 20px;
+    font-size: 17px;
+  }
+
+  .about-me .right-section ul li:nth-of-type(1),
+  .about-me .right-section ul li:nth-of-type(2),
+  .about-me .right-section ul li:nth-of-type(3){
+    display: flex;
+    align-items: center;
+    gap: 20px;    
+  }
+
+
+.about-me .right-section a{
+    color: rgb(175, 122, 224);
+    display: flex;
+    align-items: center;
+    gap: 20px;  
+    font-weight: 500;
+    transition: all 0.7s ease; 
+}
+
+.about-me .right-section a:hover{
+    letter-spacing: 0.5px;
+}
+
+.about-me .right-section i{
+    font-size: 30px;   
+}
+
+.icon-wrapper.right-icon {   
+    left: 62%;
+}
+
+.icon-wrapper.right-icon img{
+    height: 60px;
+}
+
+.inner-wrapper .section-heading.right-heading{   
+    left: 77%;   
 }
