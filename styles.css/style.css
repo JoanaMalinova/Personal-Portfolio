@@ -8,6 +8,16 @@ body {
     min-height: 100vh;
 }
 
+.header-anchor{
+    position: sticky;
+    top: 90%;
+    font-size: 50px;
+    margin-left: 95%;
+    color: rgb(196, 157, 232);
+    z-index: 10;
+    cursor: pointer;
+}
+
 /* ************************HEADER******************************* */
 
 /* ****************Navigation************************ */
@@ -127,8 +137,8 @@ body {
 .description h1 {
     font-family: Megrim, sans-serif;
     font-size: 80px;
-    font-weight: 400;
-    /* text-shadow: 6px 2px 7px rgba(0, 0, 0, 0.15); */
+    font-weight: 600;
+    text-shadow: 6px 2px 7px rgba(0, 0, 0, 0.15);
 }
 
 .description .h2-wrapper {
@@ -213,6 +223,7 @@ body {
 
 .about-me {
     margin-top: 70px;
+    padding: 120px 80px 50px;
 }
 
 .about-me .inner-wrapper {
@@ -396,7 +407,7 @@ body {
 
 .projects .inner-wrapper {
     border: none;
-    padding: 150px 0;
+    padding: 150px 0 0;
 }
 
 .projects .icon-wrapper {
@@ -410,7 +421,7 @@ body {
 .project-wrapper {
     height: 420px;
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     -webkit-box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.25);
     box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.25);
@@ -440,6 +451,10 @@ body {
     color: #ffffd3;
     font-size: 18px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .project-wrapper .project-description ul {
@@ -454,6 +469,7 @@ body {
     color: #ffffd3;
     text-align: center;
     padding: 10px;
+    /* font-weight: 400; */
     /* text-shadow: 6px 2px 7px rgba(0, 0, 0, 0.15); */
 }
 
@@ -506,4 +522,22 @@ body {
 
 .project-description a:hover {
     opacity: 0.8;
+}
+
+
+/* ****************Education********************** */
+
+.education{
+    color: rgb(175, 122, 224);
+    font-size: 19px;
+}
+
+.education .education-list span{
+    font-weight: 400;
+    font-size: 19px;
+    font-style: italic;
+}
+
+.education .education-list i{
+    color: #ffffd3;
 }
