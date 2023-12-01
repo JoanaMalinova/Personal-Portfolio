@@ -127,8 +127,8 @@ body {
 .description h1 {
     font-family: Megrim, sans-serif;
     font-size: 80px;
-    font-weight: 200;
-    text-shadow: 6px 2px 7px rgba(0, 0, 0, 0.15);
+    font-weight: 400;
+    /* text-shadow: 6px 2px 7px rgba(0, 0, 0, 0.15); */
 }
 
 .description .h2-wrapper {
