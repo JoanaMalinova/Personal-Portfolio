@@ -136,6 +136,9 @@ body {
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
+    -webkit-box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.37);
+    box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.37);
 }
 
 .skewed {
@@ -193,6 +196,9 @@ body {
     left: 5px;
     top: -80px;
     border: 3px solid rgb(175, 122, 224);
+    -webkit-box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.37);
+    box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.37);
 }
 
 .inner-wrapper .section-heading {
@@ -207,6 +213,9 @@ body {
     color: #ffffd3;
     line-height: 1;
     font-family: "Monoton", sans-serif;
+    -webkit-box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.37);
+    box-shadow: 6px 8px 16px -8px rgba(0, 0, 0, 0.37);
 }
 
 .skill-list {
@@ -224,14 +233,17 @@ body {
 .skill-list > li {
     width: 45%;
     text-align: center;
-    font-weight: 500;
+    /* font-weight: 500; */
     background-color: #ffffd3;
     padding: 5px;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
-    border: 2px solid #ffffd3;
+    /* border: 1px solid #ffffd3; */
     position: relative;
     transition: color 0.7s ease-in;
+    -webkit-box-shadow: inset 3px -6px 16px -6px rgba(0,0,0,0.17);
+    -moz-box-shadow: inset 3px -6px 16px -6px rgba(0,0,0,0.17);
+    box-shadow: inset 3px -6px 16px -6px rgba(0,0,0,0.17);
 }
 
 .skill-list > li::before {
@@ -243,6 +255,11 @@ body {
     height: 100%;
     background-color: rgb(175, 122, 224);
     transition: width 1s ease-in;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-box-shadow: inset 3px -6px 16px -6px rgba(0,0,0,0.17);
+    -moz-box-shadow: inset 3px -6px 16px -6px rgba(0,0,0,0.17);
+    box-shadow: inset 3px -6px 16px -6px rgba(0,0,0,0.17);
 }
 
 .skill-list span {
@@ -260,7 +277,7 @@ body {
         width: 90%;
     }
 
-    .skill-list > li:nth-of-type(4):before{
+    .skill-list > li:nth-of-type(4):before {
         width: 60%;
     }
 
@@ -271,7 +288,7 @@ body {
     }
 
     .skill-list > li:nth-of-type(7),
-    .skill-list > li:nth-of-type(10){
+    .skill-list > li:nth-of-type(10) {
         color: rgb(175, 122, 224);
     }
 
@@ -279,4 +296,11 @@ body {
     .skill-list > li:nth-of-type(10):before {
         width: 40%;
     }
+}
+
+/* ****************About me********************** */
+
+.about-me .inner-wrapper {
+    background-color: #ffffd3;
+    border: none;
 }
