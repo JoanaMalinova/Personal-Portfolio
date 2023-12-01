@@ -8,7 +8,7 @@ body {
     min-height: 100vh;
 }
 
-.header-anchor{
+.header-anchor {
     position: sticky;
     top: 90%;
     font-size: 50px;
@@ -524,14 +524,13 @@ body {
     opacity: 0.8;
 }
 
-
 /* ****************Education********************** */
 
-.education{
+.education {
     color: rgb(175, 122, 224);
 }
 
-.education .education-list i{
+.education .education-list i {
     color: #ffffd3;
 }
 
@@ -546,16 +545,16 @@ body {
     color: rgb(175, 122, 224);
 }
 
-.work .work-list{  
-    display: flex; 
-    justify-content: space-around; 
+.work .work-list {
+    display: flex;
+    justify-content: space-around;
     gap: 30px;
     width: 100%;
     padding: 40px;
 }
 
 .education .education-list span,
-.work .work-list span{
+.work .work-list span {
     font-weight: 400;
     font-size: 19px;
     font-style: italic;
@@ -563,6 +562,85 @@ body {
 
 /* ****************Interests********************** */
 
-.interests .inner-wrapper{
+.interests .inner-wrapper {
     border: none;
+    position: relative;
+}
+
+.interests .hiking {
+    width: 200px;
+    height: 200px;
+    background-color: #ffffd3;
+    color: rgb(175, 122, 224);
+    font-size: 26px;
+}
+
+.interest {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.animals {
+    background-color: rgb(175, 122, 224);
+    color: #ffffd3;
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    position: absolute;
+    top: 200px;
+    left: 16%;
+    z-index: 3;
+}
+
+.plants {
+    width: 250px;
+    height: 250px;
+    font-size: 28px;
+    color: rgb(175, 122, 224);
+    -webkit-box-shadow: 3px 7px 33px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 7px 33px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 7px 33px 2px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50px;
+    left: 30%;
+}
+
+.games {
+    width: 270px;
+    height: 270px;
+    font-size: 27px;
+    background-color: rgb(175, 122, 224);
+    color: #c6fad6;
+    position: absolute;
+    left: 44%;
+    top: 100px;
+    z-index: -1;
+}
+
+.movies {
+    width: 380px;
+    height: 380px;
+    color: #c6fad6;
+    background-color: #ffffd3;
+    font-size: 35px;
+    position: absolute;
+    left: 64%;
+    top: 10%;
+}
+
+.music {
+    width: 230px;
+    height: 230px;
+    font-size: 23px;
+    -webkit-box-shadow: 3px 7px 33px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 7px 33px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 7px 33px 2px rgba(0, 0, 0, 0.2);
+    color: #ffffd3;
+    z-index: 3;
+    position: absolute;
+    left: 56%;
+    top: 300px;
 }
