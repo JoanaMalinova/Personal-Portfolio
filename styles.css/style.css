@@ -314,12 +314,25 @@ body {
 
 /* ****************Skills********************** */
 
+
+
 .inner-wrapper {
     position: relative;
     border-radius: 20px;
     border: 4px dashed rgb(175, 122, 224);
     padding: 75px;
 }
+
+.skills-heading{
+    font-family:  Megrim, sans-serif;
+    color: rgb(175, 122, 224);
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* ******* Skills-Tech******* */
 
 .skill-list {
     display: flex;
@@ -330,6 +343,7 @@ body {
     font-size: 26px;
     color: rgb(175, 122, 224);
     justify-content: space-evenly;
+    margin-bottom: 50px;
 }
 
 .skill-list > li {
@@ -399,6 +413,66 @@ body {
         width: 40%;
     }
 }
+
+
+/* ******* Languages******* */
+
+.languages{
+    margin-top: 50px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.languages .dot{
+    border: 2px solid rgb(175, 122, 224);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.languages .language{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 0 20px;
+    margin-bottom: 30px;    
+}
+
+.languages span{
+    color: rgb(175, 122, 224);
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    width: 30%;
+}
+
+.languages .dot-wrapper{
+    display: flex;
+    width: 25vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.language .dot{
+    background-color: #ffffd3; 
+    -webkit-box-shadow: inset 3px -6px 16px -6px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: inset 3px -6px 16px -6px rgba(0, 0, 0, 0.17);
+    box-shadow: inset 3px -6px 16px -6px rgba(0, 0, 0, 0.17);   
+}
+
+.language.english .dot,
+.language.german .dot:nth-of-type(1),
+.language.german .dot:nth-of-type(2),
+.language.german .dot:nth-of-type(3),
+.language.italian .dot:nth-of-type(1),
+.language.italian .dot:nth-of-type(2){
+    background-color: rgb(175, 122, 224);
+}
+
+
 
 /* ****************Projects********************** */
 
@@ -705,4 +779,15 @@ body {
 
 .interest:hover::before{
    visibility: visible;
+}
+
+
+.footer{
+    margin-top: 10vw;
+    background-color:#ffffd3;
+    padding: 50px;
+    font-size: 20px;   
+    color: rgb(175, 122, 224);
+    text-align: center;    
+    font-style: italic;
 }
