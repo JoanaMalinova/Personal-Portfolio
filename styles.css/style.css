@@ -6,6 +6,7 @@ body {
     background-color: #c6fad6;
     font-family: "Montserrat Alternates", sans-serif;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .header-anchor {
@@ -433,7 +434,7 @@ body {
     border-bottom: 420px solid transparent;
     position: relative;
     background-color: #ffffd3;
-    transition: all 0.7s ease-in;
+    transition: all 0.7s ease-in;    
 }
 
 .project-wrapper.left .project-image {
