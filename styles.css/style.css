@@ -434,7 +434,7 @@ body {
     border-bottom: 420px solid transparent;
     position: relative;
     background-color: #ffffd3;
-    transition: all 0.7s ease-in;    
+    transition: all 0.7s ease-in;
 }
 
 .project-wrapper.left .project-image {
@@ -582,6 +582,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: all .6s ease-out;
 }
 
 .animals {
@@ -607,6 +608,7 @@ body {
     position: absolute;
     top: 50px;
     left: 30%;
+    z-index: 4;
 }
 
 .games {
@@ -618,7 +620,7 @@ body {
     position: absolute;
     left: 44%;
     top: 100px;
-    z-index: -1;
+    /* z-index: 0; */
 }
 
 .movies {
@@ -644,4 +646,14 @@ body {
     position: absolute;
     left: 56%;
     top: 300px;
+}
+
+
+.interest:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 3px 7px 33px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 7px 33px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 7px 33px 2px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    transform: scale(1.2);
 }
