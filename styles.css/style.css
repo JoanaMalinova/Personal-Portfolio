@@ -574,15 +574,34 @@ body {
     background-color: #ffffd3;
     color: rgb(175, 122, 224);
     font-size: 26px;
+    position: relative;    
 }
 
 .interest {
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 50%;    
+    transition: all 0.9s ease-out;
+}
+
+.interest span{
+    display: inline-block;
+    position: absolute;
     text-align: center;
-    transition: all .6s ease-out;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+}
+
+.interest::before{
+    content:"";
+    background-color: black;    
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0.2;
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.7s ease-out;
 }
 
 .animals {
@@ -648,6 +667,29 @@ body {
     top: 300px;
 }
 
+.animals:hover {
+    background: url(/images/cats.jpg);    
+}
+
+.hiking:hover {
+    background: url(/images/hiking.jpg);   
+}
+
+.games:hover{
+    background:url(/images/games.jpg);    
+}
+
+.movies:hover{
+    background:url(/images/movies.jpg);    
+}
+
+.music:hover{
+    background:url(/images/music.jpg);  
+}
+
+.plants:hover{
+    background:url(/images/plants.jpg);   
+}
 
 .interest:hover {
     cursor: pointer;
@@ -655,5 +697,12 @@ body {
     -moz-box-shadow: 3px 7px 33px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 3px 7px 33px 2px rgba(0, 0, 0, 0.2);
     z-index: 10;
-    transform: scale(1.2);
+    transform: scale(1.2);   
+    background-position: center;
+    background-size: cover; 
+    background-color: rgba(0, 0, 0, 0.726);   
+}
+
+.interest:hover::before{
+   visibility: visible;
 }
