@@ -222,6 +222,10 @@ body {
     height: 90px;
 }
 
+.lower{
+    display: none;
+}
+
 .about-me {
     margin-top: 70px;
     padding: 120px 80px 50px;
@@ -799,4 +803,154 @@ body {
     color: rgb(175, 122, 224);
     text-align: center;
     font-style: italic;
+}
+
+
+@media screen and (max-width: 1350px) {
+    .description h2 {
+        font-size: 40px;
+    }
+
+    .inner-wrapper .section-heading{
+        font-size: 25px;
+    }
+
+    .icon-wrapper{
+        width: 90px;
+        height: 90px;
+    }
+
+    .icon-wrapper img{
+        height: 60px;
+    }
+
+    .main-section.about-me img {
+        height: 80px;
+    }
+
+    .icon-wrapper.right-icon img{
+        height: 60px;
+    }
+
+    .inner-wrapper{
+        padding: 55px;
+    }
+
+    .about-me .left-section{
+        padding-right: 50px;
+        width: 65%;
+    }
+
+    .about-me .right-section {
+        padding-left: 50px;
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+
+    section{
+        padding: 50px;
+    }
+
+    .about-me{
+        padding: 50px 50px 0px;
+    }
+
+    .about-me .main-content {     
+        flex-direction: column;
+    }
+
+    .about-me .left-section{     
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgb(175, 122, 224);       
+        padding-bottom: 100px;
+        padding-right: 0px;
+    }
+
+    .about-me .right-section {      
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 100px;
+        position: relative;
+        height: 250px;
+    }  
+    
+    .about-me .right-section ul{
+        flex-wrap: wrap;
+    }
+
+    .about-me .right-section ul li{
+        width: 50%;
+    }
+
+    .lower{
+        display: flex;
+    }
+
+    .upper{
+        display: none;
+    }
+
+    .icon-wrapper.right-icon{
+        left: -55px;
+        top: -80px;
+    }
+
+    .inner-wrapper .section-heading.right-heading{
+        left: 11%;
+        top: 0;
+    } 
+
+} 
+
+@media screen and (max-width: 1000px) {
+    .description {
+        display: flex;
+        align-items: center;
+    }
+
+    .description h1 {
+        font-size: 60px;
+    }
+
+    .description h2 {
+        font-size: 30px;
+    }
+
+    .image-wrapper {
+        width: calc(30% + 50px);
+    }
+
+    .description {
+        width: calc(70% - 50px);
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    .description h1 {
+        font-size: 50px;
+        text-align: left;
+    }
+
+    .description h2 {
+        font-size: 25px;
+    }
+
+    .image-wrapper {
+        width: calc(40% + 50px);
+    }
+
+    .description {
+        width: calc(60% - 50px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+   
+    .description h2 {
+        text-align: left;
+    }
 }
