@@ -138,8 +138,7 @@ body {
 .description h1 {
     font-family: Megrim, sans-serif;
     font-size: 80px;
-    font-weight: 600;
-    text-shadow: 6px 2px 7px rgba(0, 0, 0, 0.15);
+    font-weight: 600;   
 }
 
 .description .h2-wrapper {
@@ -222,7 +221,7 @@ body {
     height: 90px;
 }
 
-.lower{
+.lower {
     display: none;
 }
 
@@ -442,7 +441,7 @@ body {
 }
 
 .languages .dot {
-    border: 2px solid rgb(175, 122, 224);
+    /* border: 2px solid rgb(175, 122, 224); */
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -460,9 +459,13 @@ body {
     color: rgb(175, 122, 224);
     font-size: 22px;
     text-transform: uppercase;
-    font-weight: 600;
+    /* font-weight: 600; */
     display: inline-block;
     width: 30%;
+}
+
+.languages span i {
+    color: #ffffd3;
 }
 
 .languages .dot-wrapper {
@@ -805,22 +808,21 @@ body {
     font-style: italic;
 }
 
-
 @media screen and (max-width: 1350px) {
     .description h2 {
         font-size: 40px;
     }
 
-    .inner-wrapper .section-heading{
+    .inner-wrapper .section-heading {
         font-size: 25px;
     }
 
-    .icon-wrapper{
+    .icon-wrapper {
         width: 90px;
         height: 90px;
     }
 
-    .icon-wrapper img{
+    .icon-wrapper img {
         height: 60px;
     }
 
@@ -828,15 +830,15 @@ body {
         height: 80px;
     }
 
-    .icon-wrapper.right-icon img{
+    .icon-wrapper.right-icon img {
         height: 60px;
     }
 
-    .inner-wrapper{
+    .inner-wrapper {
         padding: 55px;
     }
 
-    .about-me .left-section{
+    .about-me .left-section {
         padding-right: 50px;
         width: 65%;
     }
@@ -847,63 +849,61 @@ body {
     }
 }
 
-@media screen and (max-width: 1100px){
-
-    section{
-        padding: 50px;
+@media screen and (max-width: 1100px) {
+    .main-section:not(.projects) {
+        padding: 80px 50px;
     }
 
-    .about-me{
+    .about-me {
         padding: 50px 50px 0px;
     }
 
-    .about-me .main-content {     
+    .about-me .main-content {
         flex-direction: column;
     }
 
-    .about-me .left-section{     
+    .about-me .left-section {
         width: 100%;
         border-right: none;
-        border-bottom: 1px solid rgb(175, 122, 224);       
+        border-bottom: 1px solid rgb(175, 122, 224);
         padding-bottom: 100px;
         padding-right: 0px;
     }
 
-    .about-me .right-section {      
+    .about-me .right-section {
         width: 100%;
         padding-left: 0px;
         padding-top: 100px;
         position: relative;
         height: 250px;
-    }  
-    
-    .about-me .right-section ul{
+    }
+
+    .about-me .right-section ul {
         flex-wrap: wrap;
     }
 
-    .about-me .right-section ul li{
+    .about-me .right-section ul li {
         width: 50%;
     }
 
-    .lower{
+    .lower {
         display: flex;
     }
 
-    .upper{
+    .upper {
         display: none;
     }
 
-    .icon-wrapper.right-icon{
+    .icon-wrapper.right-icon {
         left: -55px;
         top: -80px;
     }
 
-    .inner-wrapper .section-heading.right-heading{
+    .inner-wrapper .section-heading.right-heading {
         left: 11%;
         top: 0;
-    } 
-
-} 
+    }
+}
 
 @media screen and (max-width: 1000px) {
     .description {
@@ -926,10 +926,25 @@ body {
     .description {
         width: calc(70% - 50px);
     }
+
+    .work .inner-wrapper {
+        padding: 45px;
+    }
+
+    .work-list {
+        flex-direction: column;
+    }
+
+    .skill-list > li {
+        width: 70%;
+    }
+
+    .skill-list {
+        gap: 15px;
+    }
 }
 
 @media screen and (max-width: 760px) {
-
     .description h1 {
         font-size: 50px;
         text-align: left;
@@ -949,8 +964,86 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-   
+    .main-header {
+        height: 180px;
+        width: 100%;
+        display: flex;
+    }
+
+    .description h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
     .description h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .description {
+        width: calc(70% - 30px);
+    }
+
+    .image-wrapper {
+        width: calc(30% + 30px);
+        border-bottom: 180px solid transparent;
+        border-right: 60px solid rgb(175, 122, 224);
+    }
+    .image-wrapper img {
+        height: 180px;
+        width: calc(100% + 60px);
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .description h1 {
+        font-size: 40px;
+        position: absolute;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: -80px;
+        width: 100vw;
+        left: 0;
+        background-color: #ffffd3;
+        color: rgb(175, 122, 224);
+    }   
+
+    .main-header{
+        position: relative;
+    }
+
+    .description{
+        position: static;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .description h2 {
+        font-size: 20px;
         text-align: left;
+        padding: 12px 12px 12px 30px;
+    }
+
+    .heading-wrapper{
+        width: min-content;
+    }
+
+}
+
+@media screen and (max-width: 420px){
+
+    .description {
+        width: calc(65% - 30px);
+    }
+
+    .image-wrapper{
+        width: calc(35% + 30px);
+    }
+
+    .description h2 {
+        font-size: 18px;        
     }
 }
