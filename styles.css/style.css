@@ -138,7 +138,7 @@ body {
 .description h1 {
     font-family: Megrim, sans-serif;
     font-size: 80px;
-    font-weight: 600;   
+    font-weight: 600;
 }
 
 .description .h2-wrapper {
@@ -927,6 +927,41 @@ body {
         width: calc(70% - 50px);
     }
 
+    .inner-wrapper .section-heading {
+        left: 25%;
+        font-size: 22px;
+    }
+
+    .icon-wrapper {
+        width: 70px;
+        height: 70px;
+        top: -65px;
+    }
+
+    .icon-wrapper.right-icon {
+        top: -65px;
+    }
+
+    .icon-wrapper img {
+        height: 45px;
+    }
+
+    .main-section.about-me img {
+        height: 60px;
+    }
+
+    .icon-wrapper.right-icon img {
+        height: 45px;
+    }
+
+    .projects .inner-wrapper .section-heading {
+        left: 25%;
+    }
+
+    .inner-wrapper .section-heading.right-heading {
+        left: 20%;
+    }
+
     .work .inner-wrapper {
         padding: 45px;
     }
@@ -993,10 +1028,18 @@ body {
         height: 180px;
         width: calc(100% + 60px);
     }
+
+    .inner-wrapper .section-heading,
+    .inner-wrapper .section-heading.right-heading,
+    .projects .inner-wrapper .section-heading {
+        left: 50%;
+        top: -35px;
+        transform: translateX(-50%);
+        font-size: 17px;
+    }
 }
 
 @media screen and (max-width: 500px) {
-
     .description h1 {
         font-size: 40px;
         position: absolute;
@@ -1009,13 +1052,13 @@ body {
         left: 0;
         background-color: #ffffd3;
         color: rgb(175, 122, 224);
-    }   
+    }
 
-    .main-header{
+    .main-header {
         position: relative;
     }
 
-    .description{
+    .description {
         position: static;
         justify-content: center;
         padding: 0;
@@ -1027,23 +1070,27 @@ body {
         padding: 12px 12px 12px 30px;
     }
 
-    .heading-wrapper{
+    .heading-wrapper {
         width: min-content;
     }
-
 }
 
-@media screen and (max-width: 420px){
-
+@media screen and (max-width: 420px) {
     .description {
         width: calc(65% - 30px);
     }
 
-    .image-wrapper{
+    .image-wrapper {
         width: calc(35% + 30px);
     }
 
     .description h2 {
-        font-size: 18px;        
+        font-size: 18px;
+    }
+
+    .inner-wrapper .section-heading,
+    .inner-wrapper .section-heading.right-heading,
+    .projects .inner-wrapper .section-heading {
+        font-size: 16px;
     }
 }
