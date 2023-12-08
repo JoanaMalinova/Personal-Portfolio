@@ -996,6 +996,24 @@ body {
     .description {
         width: calc(60% - 50px);
     }
+
+    .main-section:not(.projects) {
+        padding: 80px 30px;
+    }
+
+    .inner-wrapper {
+        padding: 50px 40px;
+    }
+
+    .right-section > ul > li:nth-child(4),
+    .right-section > ul > li:nth-child(5) {
+        width: max-content;
+        align-self: center;
+    }
+
+    .right-section > ul > li:nth-child(4) {
+        padding-top: 20px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1037,6 +1055,23 @@ body {
         transform: translateX(-50%);
         font-size: 17px;
     }
+
+    .about-me .right-section {
+        height: unset;
+    }
+
+    .right-section > ul > li:nth-child(4),
+    .right-section > ul > li:nth-child(5) {
+        width: 50%;
+    }
+
+    .right-section > ul > li:nth-child(4) {
+        padding-top: 0;
+    }
+
+    .about-me .right-section ul {
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1073,6 +1108,59 @@ body {
     .heading-wrapper {
         width: min-content;
     }
+
+    .main-section:not(.projects) {
+        padding: 90px 10px;
+    }
+
+    .icon-wrapper {
+        width: 60px;
+        height: 60px;
+        top: -60px;
+        left: -25px;
+    }
+
+    .icon-wrapper img {
+        height: 40px;
+    }
+
+    .main-section.about-me img {
+        height: 50px;
+    }
+
+    .icon-wrapper.right-icon {
+        left: -44px;
+        top: -60px;
+    }
+
+    .icon-wrapper.right-icon img {
+        height: 40px;
+    }
+
+    .projects .icon-wrapper {
+        left: -10px;
+    }
+
+    .inner-wrapper {
+        padding: 50px 20px;
+        font-size: 14px;
+    }
+
+    .about-me .right-section{
+        padding-top: 60px;
+    }
+
+    .about-me .right-section ul{
+        font-size: 15px;
+    }
+
+    .about-me .right-section i{
+        font-size: 22px;
+    }
+
+    .about-me h1{
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -1092,5 +1180,31 @@ body {
     .inner-wrapper .section-heading.right-heading,
     .projects .inner-wrapper .section-heading {
         font-size: 16px;
+    }
+
+    .about-me .right-section ul {
+        align-items: flex-start;
+        padding-left: 12px;
+    }
+
+    .right-section > ul > li:nth-child(4), .right-section > ul > li:nth-child(5) {
+        align-self: flex-start;
+        width: unset;
+    }
+
+    .about-me .left-section{
+        overflow: hidden;
+    }
+
+    .about-me .left-section p{
+        height: 300px;
+        overflow-y: scroll;
+        box-sizing: content-box;
+        padding-right: 20px;     
+        width: 100%;
+    }
+
+    .about-me .inner-wrapper{
+        padding: 50px 0px 50px 15px;
     }
 }
