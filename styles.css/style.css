@@ -450,7 +450,6 @@ body {
 .languages .language {
     display: flex;
     align-items: center;
-    width: 50%;
     padding: 0 20px;
     margin-bottom: 30px;
 }
@@ -461,7 +460,6 @@ body {
     text-transform: uppercase;
     /* font-weight: 600; */
     display: inline-block;
-    width: 30%;
 }
 
 .languages span i {
@@ -847,6 +845,18 @@ body {
         padding-left: 50px;
         width: 35%;
     }
+
+    .languages .language{
+        width: 80%;
+    }
+
+    .languages span{
+        width: 30%;
+    }
+
+    .languages .dot-wrapper{
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -903,6 +913,8 @@ body {
         left: 11%;
         top: 0;
     }
+
+   
 }
 
 @media screen and (max-width: 1000px) {
@@ -977,9 +989,18 @@ body {
     .skill-list {
         gap: 15px;
     }
+
+    .languages .language{
+        padding: 0;       
+    }
+
+    .languages span{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 760px) {
+
     .description h1 {
         font-size: 50px;
         text-align: left;
@@ -1013,6 +1034,23 @@ body {
 
     .right-section > ul > li:nth-child(4) {
         padding-top: 20px;
+    }
+
+    .main-section.skills{
+        padding-top: 0px;
+    }
+
+    .languages .dot{
+        width: 25px;
+        height: 25px;
+    }
+
+    .languages span {
+        width: 40%;
+    }
+
+    .languages .dot-wrapper {
+        width: 60%;
     }
 }
 
@@ -1072,9 +1110,23 @@ body {
     .about-me .right-section ul {
         align-items: center;
     }
+
+    .skill-list > li{
+        width: 90%;
+        padding: 2px;
+    }
+
+    .skill-list span{
+        font-size: 20px;
+    }
+
+    .languages span {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 500px) {
+
     .description h1 {
         font-size: 40px;
         position: absolute;
@@ -1146,20 +1198,24 @@ body {
         font-size: 14px;
     }
 
-    .about-me .right-section{
+    .about-me .right-section {
         padding-top: 60px;
     }
 
-    .about-me .right-section ul{
+    .about-me .right-section ul {
         font-size: 15px;
     }
 
-    .about-me .right-section i{
+    .about-me .right-section i {
         font-size: 22px;
     }
 
-    .about-me h1{
+    .about-me h1 {
         font-size: 28px;
+    }
+
+    .languages .language {
+        width: 100%;
     }
 }
 
@@ -1187,24 +1243,25 @@ body {
         padding-left: 12px;
     }
 
-    .right-section > ul > li:nth-child(4), .right-section > ul > li:nth-child(5) {
+    .right-section > ul > li:nth-child(4),
+    .right-section > ul > li:nth-child(5) {
         align-self: flex-start;
         width: unset;
     }
 
-    .about-me .left-section{
+    .about-me .left-section {
         overflow: hidden;
     }
 
-    .about-me .left-section p{
+    .about-me .left-section p {
         height: 300px;
         overflow-y: scroll;
         box-sizing: content-box;
-        padding-right: 20px;     
+        padding-right: 20px;
         width: 100%;
     }
 
-    .about-me .inner-wrapper{
+    .about-me .inner-wrapper {
         padding: 50px 0px 50px 15px;
     }
 }
