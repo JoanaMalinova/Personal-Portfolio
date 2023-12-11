@@ -27,7 +27,7 @@ body {
     background-color: #ffffd3;
     position: sticky;
     top: 0;
-    z-index: 10; 
+    z-index: 10;
 }
 
 .main-navigation .nav-list {
@@ -679,7 +679,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 11;
+    /* z-index: 11; */
 }
 
 .interest::before {
@@ -847,15 +847,15 @@ body {
         width: 35%;
     }
 
-    .languages .language{
+    .languages .language {
         width: 80%;
     }
 
-    .languages span{
+    .languages span {
         width: 30%;
     }
 
-    .languages .dot-wrapper{
+    .languages .dot-wrapper {
         width: 70%;
     }
 }
@@ -914,58 +914,57 @@ body {
         left: 11%;
         top: 0;
     }
-    
-    .project-wrapper .project-description h2{
+
+    .project-wrapper .project-description h2 {
         padding: 0;
         line-height: 1.2;
         font-size: 42px;
     }
 
-    .project-wrapper .project-description ul{
+    .project-wrapper .project-description ul {
         gap: 5px;
     }
 
-    .project-wrapper .project-description{
+    .project-wrapper .project-description {
         padding: 0 20px 10px;
     }
 
-    .interests .inner-wrapper{
+    .interests .inner-wrapper {
         height: 500px;
     }
 
-    .interests .hiking {      
+    .interests .hiking {
         right: 20px;
         top: 10px;
     }
 
-    .animals {        
+    .animals {
         top: 200px;
-        left: 90px;      
+        left: 90px;
     }
 
-    .plants {       
+    .plants {
         top: 50px;
-        left: 28%;      
+        left: 28%;
     }
 
-    .games {      
+    .games {
         left: 50%;
-        top: 50px;      
+        top: 50px;
     }
 
     .movies {
         width: 350px;
-        height: 350px;       
-        font-size: 32px;       
+        height: 350px;
+        font-size: 32px;
         left: 48%;
         top: 58%;
     }
 
-    .music {     
+    .music {
         left: 75%;
         top: 200px;
     }
-   
 }
 
 @media screen and (max-width: 1000px) {
@@ -1041,45 +1040,89 @@ body {
         gap: 15px;
     }
 
-    .languages .language{
-        padding: 0;       
+    .languages .language {
+        padding: 0;
     }
 
-    .languages span{
+    .languages span {
         font-size: 20px;
     }
 
-    .movies{
+    .movies {
         left: 38%;
     }
 
-    .music{
+    .music {
         left: 70%;
     }
 }
 
 @media screen and (max-width: 850px) {
-
-    .project-wrapper .project-description{
+    .project-wrapper .project-description {
         font-size: 15px;
     }
 
-    .project-wrapper .project-description h2{
+    .project-wrapper .project-description h2 {
         font-size: 36px;
     }
 
-    .project-wrapper.left .project-description{
+    .project-wrapper.left .project-description {
         padding: 0 20px 10px 0;
     }
 
-    .project-wrapper.right .project-description{
+    .project-wrapper.right .project-description {
         padding: 0 0 10px 20px;
+    }
+
+    .interests .hiking {
+        width: 180px;
+        height: 180px;
+        font-size: 23px;
+    }
+
+    .plants {
+        width: 230px;
+        height: 230px;
+        font-size: 26px;
+        top: 50px;
+        left: 30%;
+    }
+
+    .games {
+        width: 220px;
+        height: 220px;
+        font-size: 25px;
+        left: 44%;
+        top: 100px;
+    }
+
+    .animals {
+        width: 260px;
+        height: 260px;
+        font-size: 25px;
+        top: 200px;
+        left: 16%;
+    }
+
+    .movies {
+        width: 320px;
+        height: 320px;
+        font-size: 28px;
+        left: 48%;
+        top: 58%;
+    }
+
+    .music {
+        width: 200px;
+        height: 200px;
+        font-size: 23px;
+        left: 56%;
+        top: 300px;
     }
 }
 
 @media screen and (max-width: 760px) {
-
-    .main-navigation{
+    .main-navigation {
         width: 100vw;
         overflow-x: scroll;
         overflow-y: hidden;
@@ -1120,11 +1163,11 @@ body {
         padding-top: 20px;
     }
 
-    .main-section.skills{
+    .main-section.skills {
         padding-top: 0px;
     }
 
-    .languages .dot{
+    .languages .dot {
         width: 25px;
         height: 25px;
     }
@@ -1137,12 +1180,63 @@ body {
         width: 60%;
     }
 
-    .project-wrapper .project-description{
+    .project-wrapper .project-description {
         font-size: 14px;
     }
 
-    .project-wrapper .project-description h2{
+    .project-wrapper .project-description h2 {
         font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    
+    .interests .hiking {
+        width: 160px;
+        height: 160px;
+        font-size: 23px;
+        right: 30px;
+        top: 10px;
+    }
+
+    .plants {
+        width: 210px;
+        height: 208px;
+        font-size: 24px;
+        top: 50px;
+        left: 20%;
+    }
+
+    .games {
+        width: 200px;
+        height: 200px;
+        font-size: 23px;
+        left: 50%;
+        top: 50px;
+    }
+
+    .music {
+        width: 180px;
+        height: 180px;
+        font-size: 21px;
+        top: 300px;
+        left: 63%;
+    }
+
+    .animals {
+        width: 240px;
+        height: 240px;
+        font-size: 23px;
+        top: 200px;
+        left: 40px;
+    }
+
+    .movies {
+        width: 300px;
+        height: 300px;
+        font-size: 25px;
+        left: 34%;
+        top: 58%;
     }
 }
 
@@ -1203,12 +1297,12 @@ body {
         align-items: center;
     }
 
-    .skill-list > li{
+    .skill-list > li {
         width: 90%;
         padding: 2px;
     }
 
-    .skill-list span{
+    .skill-list span {
         font-size: 20px;
     }
 
@@ -1218,7 +1312,6 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-
     .description h1 {
         font-size: 40px;
         position: absolute;
@@ -1311,9 +1404,7 @@ body {
     }
 }
 
-@media screen and (max-width: 420px) {    
-   
-
+@media screen and (max-width: 420px) {
     .description {
         width: calc(65% - 30px);
     }
