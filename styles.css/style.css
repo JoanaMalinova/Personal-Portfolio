@@ -928,6 +928,43 @@ body {
     .project-wrapper .project-description{
         padding: 0 20px 10px;
     }
+
+    .interests .inner-wrapper{
+        height: 500px;
+    }
+
+    .interests .hiking {      
+        right: 20px;
+        top: 10px;
+    }
+
+    .animals {        
+        top: 200px;
+        left: 90px;      
+    }
+
+    .plants {       
+        top: 50px;
+        left: 28%;      
+    }
+
+    .games {      
+        left: 50%;
+        top: 50px;      
+    }
+
+    .movies {
+        width: 350px;
+        height: 350px;       
+        font-size: 32px;       
+        left: 48%;
+        top: 58%;
+    }
+
+    .music {     
+        left: 75%;
+        top: 200px;
+    }
    
 }
 
@@ -1010,6 +1047,14 @@ body {
 
     .languages span{
         font-size: 20px;
+    }
+
+    .movies{
+        left: 38%;
+    }
+
+    .music{
+        left: 70%;
     }
 }
 
