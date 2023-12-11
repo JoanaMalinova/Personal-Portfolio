@@ -1055,6 +1055,10 @@ body {
     .music {
         left: 70%;
     }
+
+    .header-anchor {        
+        margin-left: 92%;       
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -1239,6 +1243,10 @@ body {
         left: 34%;
         top: 58%;
     }
+
+    .header-anchor {        
+        margin-left: 87%;        
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1312,6 +1320,7 @@ body {
         font-size: 18px;
     }
 
+    
 
 }
 
@@ -1462,6 +1471,7 @@ body {
 }
 
 @media screen and (max-width: 420px) {
+
     .description {
         width: calc(65% - 30px);
     }
@@ -1505,5 +1515,9 @@ body {
 
     .about-me .inner-wrapper {
         padding: 50px 15px 50px;
+    }
+
+    .header-anchor {        
+        font-size: 40px;        
     }
 }
