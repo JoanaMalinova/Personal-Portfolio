@@ -1320,7 +1320,18 @@ body {
         font-size: 18px;
     }
 
-    
+    .project-wrapper {
+        height: 350px;
+    }
+
+    .project-image img {
+        height: 350px;        
+    }
+
+    .project-wrapper .project-description p{
+        max-height: 220px;
+        overflow-y: scroll;
+    }
 
 }
 
@@ -1450,7 +1461,7 @@ body {
         height: 230px;
         font-size: 22px;
         top: 300px;
-        left: 40px;
+        left: 20px;
     }
 
     .music {
@@ -1467,6 +1478,19 @@ body {
         font-size: 24px;
         left: 20%;
         top: 70%;
+    }
+
+    .project-wrapper {
+        height: 300px;
+    }
+
+    .project-image img {
+        height: 300px;        
+    }
+
+    .project-wrapper .project-description p{
+        max-height: 160px;
+        overflow-y: scroll;
     }
 }
 
@@ -1519,5 +1543,39 @@ body {
 
     .header-anchor {        
         font-size: 40px;        
+    }
+
+    .project-wrapper {
+        height: 250px;
+    }
+
+    .project-wrapper .project-description {
+        width: calc(60% - 20px);                       
+    }
+
+    .project-wrapper .project-image {
+        width: calc(40% + 20px);       
+        border-bottom: 250px solid transparent;       
+    }
+
+    .project-wrapper.left .project-image {
+        border-right: 40px solid rgb(175, 122, 224);
+    }
+
+    .project-wrapper.right .project-image {
+        border-left: 40px solid rgb(175, 122, 224);
+    }
+
+    .project-wrapper .project-description h2 {
+        font-size: 25px;
+    }
+
+    .project-wrapper .project-description p {
+        max-height: 130px;
+        overflow-y: scroll;
+    }
+
+    .project-image img {
+        height: 250px;
     }
 }
