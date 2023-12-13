@@ -46,7 +46,7 @@ body {
     z-index: 2;
     display: block;
     padding: 10px;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
@@ -444,6 +444,7 @@ body {
     display: inline-block;
     transform: skewX(-20deg);
     font-size: 22px;
+    font-weight: 300;
 }
 
 .inner-wrapper:hover {
@@ -1023,6 +1024,7 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+
     .main-navigation .nav-list {
         width: 100%;
     }
@@ -1137,7 +1139,7 @@ body {
         height: 100vh;
         right: -48vw;
         transition: all 0.8s ease;
-        z-index: 20;
+        z-index: 20;           
     }
 
     .checkbox:checked ~ .main-navigation {
@@ -1152,7 +1154,7 @@ body {
         -webkit-box-shadow: -9px 2px 18px -8px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: -9px 2px 18px -8px rgba(0, 0, 0, 0.75);
         box-shadow: -9px 2px 18px -8px rgba(0, 0, 0, 0.3);
-        gap: 5px;
+        gap: 5px;       
     }
 
     .main-navigation .nav-list-item a {
@@ -1438,9 +1440,10 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-    .main-navigation {
-        width: 56vw;
-        right: -60vw;
+    
+    .main-navigation {      
+        width: 65vw;        
+        right: 70vw;              
     }
 
     .hamburger-menu {
