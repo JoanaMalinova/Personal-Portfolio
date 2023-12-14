@@ -1024,7 +1024,6 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-
     .main-navigation .nav-list {
         width: 100%;
     }
@@ -1139,7 +1138,7 @@ body {
         height: 100vh;
         right: -48vw;
         transition: all 0.8s ease;
-        z-index: 20;           
+        z-index: 20;
     }
 
     .checkbox:checked ~ .main-navigation {
@@ -1154,7 +1153,7 @@ body {
         -webkit-box-shadow: -9px 2px 18px -8px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: -9px 2px 18px -8px rgba(0, 0, 0, 0.75);
         box-shadow: -9px 2px 18px -8px rgba(0, 0, 0, 0.3);
-        gap: 5px;       
+        gap: 5px;
     }
 
     .main-navigation .nav-list-item a {
@@ -1440,10 +1439,9 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-    
-    .main-navigation {      
-        width: 65vw;        
-        right: 70vw;              
+    .main-navigation {
+        width: 65vw;
+        right: -70vw;
     }
 
     .hamburger-menu {
@@ -1596,7 +1594,7 @@ body {
         top: 70%;
     }
 
-    .project-wrapper {
+    /* .project-wrapper {
         height: 300px;
     }
 
@@ -1607,6 +1605,66 @@ body {
     .project-wrapper .project-description p {
         max-height: 160px;
         overflow-y: scroll;
+    } */
+
+    .project-wrapper.left {
+        flex-direction: column-reverse;
+        height: unset;
+    }
+
+    .project-wrapper.right {
+        flex-direction: column;
+        height: unset;
+    }
+
+    .project-wrapper .project-description,
+    .project-wrapper .project-image {
+        width: 100%;
+    }
+
+    .project-wrapper .project-image {
+        border-top: 100px solid rgb(175, 122, 224);
+        border-bottom: none;
+        height: 300px;
+        background-color: transparent;
+    }
+
+    .right .project-image img {
+        height: 300px;
+        position: absolute;
+        bottom: 0;
+        top: unset;
+        /* left: 0;    */
+        right: 0;
+    }
+
+    .left .project-image img {
+        height: 300px;
+        position: absolute;
+        bottom: 0;
+        top: unset;
+        /* right: 0;
+        left: unset;    */
+        left: 0;
+    }
+
+    .project-wrapper.left .project-image {       
+        border-left: 100vw solid transparent;        
+    }
+
+    .project-wrapper.right .project-image{
+        border-right: 100vw solid transparent; 
+        border-left: none;
+    }
+
+    .project-wrapper.left .project-description,
+    .project-wrapper.right .project-description{
+        padding: 20px 10px;   
+        gap: 8px;     
+    }
+
+    .project-wrapper .project-description ul {
+        gap: 10px;
     }
 }
 
