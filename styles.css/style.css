@@ -1594,19 +1594,6 @@ body {
         top: 70%;
     }
 
-    /* .project-wrapper {
-        height: 300px;
-    }
-
-    .project-image img {
-        height: 300px;
-    }
-
-    .project-wrapper .project-description p {
-        max-height: 160px;
-        overflow-y: scroll;
-    } */
-
     .project-wrapper.left {
         flex-direction: column-reverse;
         height: unset;
@@ -1634,8 +1621,7 @@ body {
         position: absolute;
         bottom: 0;
         top: unset;
-        /* left: 0;    */
-        right: 0;
+        left: 0;
     }
 
     .left .project-image img {
@@ -1643,24 +1629,30 @@ body {
         position: absolute;
         bottom: 0;
         top: unset;
-        /* right: 0;
-        left: unset;    */
-        left: 0;
+        right: -40px;
+        left: unset;
     }
 
-    .project-wrapper.left .project-image {       
-        border-left: 100vw solid transparent;        
+    .project-wrapper.left:hover {
+        .project-image img {
+            right: -40px;
+            left: unset;
+        }
     }
 
-    .project-wrapper.right .project-image{
-        border-right: 100vw solid transparent; 
+    .project-wrapper.left .project-image {
+        border-left: 100vw solid transparent;
+    }
+
+    .project-wrapper.right .project-image {
+        border-right: 100vw solid transparent;
         border-left: none;
     }
 
     .project-wrapper.left .project-description,
-    .project-wrapper.right .project-description{
-        padding: 20px 10px;   
-        gap: 8px;     
+    .project-wrapper.right .project-description {
+        padding: 20px 10px;
+        gap: 8px;
     }
 
     .project-wrapper .project-description ul {
@@ -1669,6 +1661,7 @@ body {
 }
 
 @media screen and (max-width: 420px) {
+
     .description {
         width: calc(65% - 30px);
     }
@@ -1716,39 +1709,7 @@ body {
 
     .header-anchor {
         font-size: 40px;
-    }
-
-    .project-wrapper {
-        height: 250px;
-    }
-
-    .project-wrapper .project-description {
-        width: calc(60% - 20px);
-    }
-
-    .project-wrapper .project-image {
-        width: calc(40% + 20px);
-        border-bottom: 250px solid transparent;
-    }
-
-    .project-wrapper.left .project-image {
-        border-right: 40px solid rgb(175, 122, 224);
-    }
-
-    .project-wrapper.right .project-image {
-        border-left: 40px solid rgb(175, 122, 224);
-    }
-
-    .project-wrapper .project-description h2 {
-        font-size: 25px;
-    }
-
-    .project-wrapper .project-description p {
-        max-height: 130px;
-        overflow-y: scroll;
-    }
-
-    .project-image img {
-        height: 250px;
-    }
+    } 
+   
+ 
 }
